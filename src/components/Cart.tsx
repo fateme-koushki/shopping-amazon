@@ -10,8 +10,9 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import Price from "./Price";
 import { useEffect, useState } from "react";
+import {  StateProps } from "@/types";
 function Carts() {
-  const { productData } = useSelector((state: any) => state.cart);
+  const { productData } = useSelector((state : StateProps) => state.cart);
   const dispatch = useDispatch();
   const [totalAmt, setTotalAmt] = useState(0);
   //Price calculation
@@ -26,7 +27,10 @@ function Carts() {
 
   const handleReset = () => {
     const confirmed = window.confirm("Are You sure to reset your cart ?");
-    confirmed && dispatch(resetCart());
+    if(confirmed){
+      dispatch(resetCart());
+    }  
+    
     toast.success("Cart resetted successfully");
   };
   return (
@@ -43,7 +47,7 @@ function Carts() {
             <h2>Sub Total</h2>
           </div>
           <div className="mt-5">
-            {productData.map((item) => (
+            {productData.map((item ) => (
               <div key={item?.id}>
                 <CartItem item={item} />
               </div>

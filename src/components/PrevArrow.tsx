@@ -1,3 +1,4 @@
+/* eslint-disable */ 
 import React from "react";
 import { FaLongArrowAltLeft } from "react-icons/fa";
 

@@ -2,7 +2,31 @@
 const nextConfig = {
     reactStrictMode : false,
     images : {
-        domains : ["i.imghippo.com" , "img.freepik.com" , "images.unsplash.com" , "lh3.googleusercontent.com" ]
+        remotePatterns : [
+            {
+                protocol: "https",
+                hostname: "i.imghippo.com",
+                pathname: "**",
+            },
+            {
+                protocol: "https",
+                hostname: "img.freepik.com",
+                pathname: "**",
+            },
+            {
+                protocol: "https",
+                hostname: "images.unsplash.com",
+                pathname: "**",
+            },
+
+            {
+                protocol: "https",
+                hostname: "lh3.googleusercontent.com",
+                pathname: "**",
+            },
+
+        ]
+       
     }
 };
 

@@ -1,4 +1,5 @@
 "use client";
+/* eslint-disable */ 
 import React, {  useEffect, useState } from "react";
 import { RiShoppingCart2Fill } from "react-icons/ri";
 import { MdSwitchAccount } from "react-icons/md";
@@ -8,26 +9,30 @@ import Cookies from "js-cookie";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import toast, { Toaster } from "react-hot-toast";
+import { StateProps } from "@/types";
 function PageButton() {
-  const [userInfo, setUserInfo] = useState([]);
+  const [userInfo, setUserInfo] = useState<any>([]);
   const router = useRouter();
+
+   
+  
   const logIn = () => {
     router.replace("/auth/login");
   };
   useEffect(() => {
-    const userInf = Cookies.get("tokenLogin");
+    const userInf= Cookies.get("tokenLogin");
     if (userInf) {
-      const user = JSON.parse(userInf);
+      const user   = JSON.parse(userInf);
       setUserInfo(user);
     }
   }, []);
 
-  const { productData } = useSelector((state: any) => state.cart);
+  const { productData } = useSelector((state: StateProps) => state.cart);
   return (
     <div className="fixed top-60 right-2 z-20 flex flex-col gap-2 ">
       <button
         onClick={() => {
-          !userInfo?.name ? logIn() : toast.error("your are signed in");
+          !userInfo?.name  ? logIn() : toast.error("your are signed in");
         }}
         className="bg-white w-16 h-[70px] rounded-md flex flex-col gap-1 text-[#33475b] justify-center items-center shadow-testShadow overflow-x-hidden group cursor-pointer "
       >

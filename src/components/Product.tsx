@@ -8,8 +8,12 @@ import { AiOutlineShopping } from "react-icons/ai";
 import toast, { Toaster } from "react-hot-toast";
 import { useDispatch } from "react-redux";
 import { addToCart } from "@/app/redux/cartSlice";
-
-function Product({ product, bg }: any) {
+import { ProductProps } from "@/types";
+interface Props {
+  product: ProductProps;
+  bg?: string;
+}
+function Product({ product, bg }: Props) {
   const dispatch = useDispatch();
   return (
     <div

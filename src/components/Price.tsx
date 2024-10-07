@@ -1,5 +1,5 @@
 interface Props {
-    amount: string;
+    amount: number;
     className?: string;
 }
 function Price({ amount, className }: Props) {

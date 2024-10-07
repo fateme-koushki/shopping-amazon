@@ -1,4 +1,5 @@
 "use client";
+/* eslint-disable */ 
 import { useGoogleLogin } from "@react-oauth/google";
 import axios from "axios";
 import React, { useState } from "react";
@@ -27,7 +28,7 @@ function AuthButton() {
     },
   });
   // User information by form...
-  const handlerSubmit = async (data) => {
+  const handlerSubmit = async (data :any) => {
     await axios.post("http://localhost:3000/users", { data: data  }).then((res)=>{
       Cookies.set("tokenLogin", JSON.stringify(res.data.data))
       window.location.href = "/";
@@ -35,7 +36,7 @@ function AuthButton() {
 
   };
   // User information by Google...
-  const login = useGoogleLogin({
+  const login :any = useGoogleLogin({
     onSuccess: async (tokenRespone) => {
       const res = await axios.get(
         `https://www.googleapis.com/oauth2/v3/userinfo`,

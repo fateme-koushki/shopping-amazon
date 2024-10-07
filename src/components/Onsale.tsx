@@ -2,8 +2,11 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import Price from "./Price";
-
-function Onsale({ products }: any) {
+import { ProductProps } from "@/types";
+interface Props {
+  products: ProductProps[];
+}
+function Onsale({ products }: Props) {
   return (
     <div>
       <h3 className="text-xl font-semibold mb-5 underline underline-offset-4 decoration-[1px]">
@@ -11,7 +14,7 @@ function Onsale({ products }: any) {
       </h3>
       <div className="flex flex-col gap-2 justify-normal">
         {products?.map(
-          (item: any) =>
+          (item: ProductProps) =>
             item?.onSale && (
               <Link
                 href={`/product/${item?.id}`}

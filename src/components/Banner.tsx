@@ -1,4 +1,5 @@
 "use client";
+import { ProductProps } from "@/types";
 import axios from "axios";
 import Image from "next/image";
 import Link from "next/link";
@@ -22,10 +23,10 @@ function Banner() {
   return (
     <div className="relative">
       <Slider {...settings}>
-        {data?.map((item: any) => (
+        {data?.map((item : ProductProps) => (
           <Link href={"/shope"} key={item?.id} >
             <Image
-              src={item?.src}
+              src={item?.image}
               alt="img-banner"
               width={2000}
               height={2000}

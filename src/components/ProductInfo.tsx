@@ -3,11 +3,12 @@
 import Price from "./Price";
 import { useDispatch } from "react-redux";
 import { addToCart } from "@/app/redux/cartSlice";
-
+import { ProductProps } from "@/types";
 interface Props {
-  productInfo: object;
+  productInfo: ProductProps;
 }
-function ProductInfo({ productInfo }: Props) {
+
+function ProductInfo( {productInfo} : Props) {
   const dispatch = useDispatch();
   return (
     <div className="flex flex-col gap-4">

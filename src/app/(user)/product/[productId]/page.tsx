@@ -11,7 +11,7 @@ import Container from "@/components/Container";
 function SingeProduct() {
   const { productId } = useParams();
   // for onsale
-  const { data: products } = useQuery("products", () =>
+  const { data: product } = useQuery("productsId", () =>
     axios
       .get(`http://localhost:3000/products/${productId}`)
       .then((res) => res.data)
@@ -28,7 +28,7 @@ function SingeProduct() {
         </div>
         <div className="h-full xl:col-span-2">
           <Image
-            src={products?.image}
+            src={product?.image}
             alt="product image"
             className="w-full h-full object-contain"
             width={500}
@@ -36,7 +36,7 @@ function SingeProduct() {
           />
         </div>
         <div className="w-full md:col-span-2 xl:col-span-3 xl:p-14 flex flex-col gap-6 justify-center">
-          <ProductInfo productInfo={products} />
+          <ProductInfo productInfo={product} />
         </div>
       </div>
     </Container>

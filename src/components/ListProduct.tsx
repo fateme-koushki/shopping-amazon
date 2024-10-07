@@ -4,7 +4,12 @@ import Link from 'next/link'
 import { BsArrowsFullscreen } from 'react-icons/bs';
 import { MdOutlineStarPurple500 } from 'react-icons/md';
 import { AiOutlineShopping } from 'react-icons/ai';
-function ListProduct({ product, bg }: any) {
+import { ProductProps } from '@/types';
+interface Props {
+    product: ProductProps;
+    bg?: string;
+  }
+function ListProduct({ product, bg }: Props) {
     return (
         <div className="w-full relative group flex items-center border-[1px] hover:shadow-lg duration-200 shadow-gray-500 rounded-md overflow-hidden group">
             <div className="max-w-80 max-h-80 flex">
@@ -41,7 +46,7 @@ function ListProduct({ product, bg }: any) {
                     </p>
                     <p className="font-semibold">${product?.price}</p>
                 </div>
-                <p className="text-sm max-w-2xl">{product?.description}</p>
+                <p className="text-sm max-w-2xl">{product?.discribtion}</p>
                 <div className="flex items-center justify-between">
                     <p className="text-[#767676] text-[14px]">
                         a product by{" "}

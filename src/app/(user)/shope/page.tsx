@@ -2,6 +2,7 @@
 import Container from "@/components/Container";
 import ListProduct from "@/components/ListProduct";
 import Product from "@/components/Product";
+import { ProductProps } from "@/types";
 import axios from "axios";
 import React, { useState } from "react";
 import { BsGridFill } from "react-icons/bs";
@@ -54,11 +55,11 @@ function Shope() {
       {showGrid ? (
         <div className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5">
           {data &&
-            data?.map((item: any) => <Product key={item?.id} product={item} />)}
+            data?.map((item: ProductProps) => <Product key={item?.id} product={item} />)}
         </div>
       ) : (
         <div className="w-full grid grid-cols-1 gap-5">
-          {data?.map((item: any) => (
+          {data?.map((item: ProductProps) => (
             <ListProduct key={item?.id} product={item} />
           ))}
         </div>

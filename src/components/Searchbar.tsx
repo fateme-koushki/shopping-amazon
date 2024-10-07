@@ -1,4 +1,5 @@
 "use client";
+/* eslint-disable */ 
 import { ProductProps } from "@/types";
 import axios from "axios";
 import { useRouter } from "next/navigation";
@@ -9,7 +10,7 @@ import { useQuery } from "react-query";
 
 
 
-const SearchComponent = ({ className }) => {
+const SearchComponent = ({ className } : any) => {
   const router = useRouter();
   const [searchQuery, setSearchQuery] = useState("");
   const [products, setProducts] = useState([]); 
@@ -21,14 +22,14 @@ const SearchComponent = ({ className }) => {
   useEffect(() => {
     if (searchQuery && searchQuery?.length > 0) {
       const productsList = [...data];
-      const filteredProducts : object[] = productsList?.filter((p) => p?.title.includes(searchQuery)
+      const filteredProducts : any = productsList?.filter((p) => p?.title.includes(searchQuery)
       );
       setProducts(filteredProducts ?? []);
     } else {
       setProducts(data);
     }
   }, [searchQuery]);
-  const searchProduct = (id:ProductProps) => {
+  const searchProduct = (id: any) => {
     router.push(`/product/${id}`);
   };
 

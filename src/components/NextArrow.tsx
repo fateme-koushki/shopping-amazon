@@ -1,3 +1,4 @@
+/* eslint-disable */ 
 import React from "react";
 import { FaLongArrowAltRight } from "react-icons/fa";
 function NextArrow(props: any) {

@@ -6,8 +6,10 @@ import { useQuery } from "react-query";
 import axios from "axios";
 import Product from "./Product";
 import { ProductProps } from "@/types";
-
-function BestSellers({ title }: any) {
+interface Props {
+  title?: string;
+}
+function BestSellers({ title  } : Props) {
   const { data } = useQuery("Bestsellres", () =>
     axios.get("http://localhost:3000/bestsellers").then((res) => res.data)
   );
