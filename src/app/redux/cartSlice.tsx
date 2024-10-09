@@ -33,11 +33,11 @@ export const cartSlice = createSlice({
             const existingProduct = state?.productData.find(
                 (item :ProductProps) => item?.id === action?.payload?.id
             );
-            if (existingProduct) {
-                existingProduct.qty += action.payload.qty;
-              } else {
-                state.productData.push(action.payload);
-              }
+            if (existingProduct && existingProduct.qty === 1) {  
+                existingProduct.qty = 1 ;
+            } else if (existingProduct && existingProduct.qty > 0) {  
+                existingProduct.qty--;  
+            }  
         },
         deleteProduct: (state, action) => {
             state.productData = state.productData.filter(
