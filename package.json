@@ -6,8 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "serve": "json-server --watch db.json --port 8080"
+    "lint": "next lint"
+   
   },
   "dependencies": {
     "@react-oauth/google": "^0.12.1",
