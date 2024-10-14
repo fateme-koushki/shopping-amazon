@@ -2,6 +2,8 @@ interface Props {
     amount: number;
     className?: string;
 }
+
+
 function Price({ amount, className }: Props) {
     const priceFormat = new Number(amount).toLocaleString("en-US", {
         style: "currency",
