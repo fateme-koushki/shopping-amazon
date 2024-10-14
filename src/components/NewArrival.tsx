@@ -9,11 +9,12 @@ import Product from "./Product";
 import NextArrow from "./NextArrow";
 import PrevArrow from "./PrevArrow";
 import { ProductProps } from "@/types";
+import axiosClient from "./GlobalApi";
 
 
 function NewArrival() {
   const { data } = useQuery("allProducts", () =>
-    axios.get("http://localhost:3000/products").then((res) => res.data)
+    axiosClient.get("/products").then((res) => res.data)
   );
   const settings = {
     infinite: true,

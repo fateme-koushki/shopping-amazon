@@ -29,11 +29,9 @@ function AuthButton() {
   });
   // User information by form...
   const handlerSubmit = async (data :any) => {
-    await axios.post("http://localhost:3000/users", { data: data  }).then((res)=>{
-      Cookies.set("tokenLogin", JSON.stringify(res.data.data))
+      Cookies.set("tokenLogin", JSON.stringify(data))
       window.location.href = "/";
-    }  );
-
+     
   };
   // User information by Google...
   const login :any = useGoogleLogin({

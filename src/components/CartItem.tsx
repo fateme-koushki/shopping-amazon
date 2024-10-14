@@ -27,9 +27,10 @@ function CartItem({ item }: Props) {
           <Image
             src={item?.image}
             alt="img product"
-            width={50}
-            height={50}
-            className="w-32 h-32 object-contain"
+            
+            width={128}
+            height={128}
+            className="w-32 h-32 object-cover"
           />
         </Link>
         <h1 className="font-semibold">{item?.title}</h1>

@@ -1,18 +1,23 @@
 "use client";
-import React from "react";
+/* eslint-disable */ 
+
+import React, { useState } from "react";
 import Container from "./Container";
 import Heading from "./Heading";
 import { useQuery } from "react-query";
-import axios from "axios";
 import Product from "./Product";
 import { ProductProps } from "@/types";
+import axiosClient from "./GlobalApi";
 interface Props {
   title?: string;
 }
 function BestSellers({ title  } : Props) {
-  const { data } = useQuery("Bestsellres", () =>
-    axios.get("http://localhost:3000/bestsellers").then((res) => res.data)
-  );
+  const { data } = useQuery("Bestsellres", () => {
+   return axiosClient.get("/bestsellers").then((res) => res.data)
+ },{
+  refetchOnWindowFocus: true,   
+    refetchInterval: 10000,        
+ } );
   return (
     <Container className="w-full pb-20">
       <Heading heading={title} />

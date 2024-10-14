@@ -3,32 +3,33 @@
     {
       "id": "3",
       "title": "banner3",
-      "image": "https://i.imghippo.com/files/KsNfB1727115141.jpg"
+      "image": "/assets/banner1.jpg"
     },
     {
       "id": "1",
       "title": "banner1",
-      "image": "https://i.imghippo.com/files/31LNQ1727114825.jpg"
+      "image": "/assets/bannerphone.jpg"
     },
     {
       "id": "2",
-      "title": "banner2",
-      "image": "https://i.imghippo.com/files/3xB591727014797.png"
+      "title": "banner3",
+      "image": "/assets/banneriphone2.jpg"
     }
+    
   ],
   "products": [
     {
       "id": "1",
       "qty": 1,
       "isnew": "true",
-      "title": "iPhone",
+      "title": "book",
       "rowprice": 330,
       "price": 300 ,
       "rating": "4",
       "discribtion": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima magnam error nam obcaecati voluptatibus explicabo,fugiat cumque eaque perspiciatis tempore debitis odio? Amet, fuga dolorum",
       "brand": "local",
       "query": "phone",
-      "image": "https://img.freepik.com/free-vector/realistic-white-smartphone-design-with-three-cameras_23-2148374059.jpg?t=st=1727166892~exp=1727170492~hmac=95714e36a2d038d0abd5e5bee9d11b7ed8207cc097539a427b4b0c26d744bcd5&w=740"
+      "image": "/assets/book2.jpg"
     },
     {
       "id": "2",
@@ -41,19 +42,19 @@
       "rating": "6",
       "query": "laptop",
       "discribtion": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima magnam error nam obcaecati voluptatibus explicabo,fugiat cumque eaque perspiciatis tempore debitis odio? Amet, fuga dolorum",
-      "image": "https://img.freepik.com/free-photo/club-object-playing-volume-reflection_1172-520.jpg?t=st=1727079182~exp=1727082782~hmac=d6d7a915547a96ea68bcbf5c5bd6260989f8913f400bc12b035883e0c0c6b68b&w=740"
+      "image": "/assets/hedphone.jpg" 
     },
     {
       "id": "3",
       "qty": 1,
-      "title": "phone sumsung",
+      "title": "iphone",
       "rowprice": 330,
       "price": 300,
       "brand": "local",
       "rating": "5",
       "query": "phone",
       "discribtion": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima magnam error nam obcaecati voluptatibus explicabo,fugiat cumque eaque perspiciatis tempore debitis odio? Amet, fuga dolorum",
-      "image": "https://img.freepik.com/free-vector/smartphone-with-gradient-wallpaper_23-2147843160.jpg?t=st=1727079137~exp=1727082737~hmac=e81e26f4858c5e526304229df4921fd734fc106502ef1527cafd71de4fe2b22a&w=740"
+      "image":"/assets/iphone11.jpg"
     },
     {
       "id": "4",
@@ -65,7 +66,7 @@
       "rating": "3",
       "query": "watch",
       "discribtion": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima magnam error nam obcaecati voluptatibus explicabo,fugiat cumque eaque perspiciatis tempore debitis odio? Amet, fuga dolorum",
-      "image": "https://img.freepik.com/free-vector/headphones-wireless-realistic-composition-with-isolated-image-phones-with-power-bank-dock-station-with-reflections-vector-illustration_1284-73201.jpg?t=st=1727077067~exp=1727080667~hmac=a84665f4a9e7d981eff31d8bbcc3d6035565443644f3d12699740f6ed79a8fd6&w=740"
+      "image":"/assets/airpod1.jpg"
     },
     {
       "id": "5",
@@ -77,7 +78,7 @@
       "rating": "4",
       "query": "laptop",
       "discribtion": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima magnam error nam obcaecati voluptatibus explicabo,fugiat cumque eaque perspiciatis tempore debitis odio? Amet, fuga dolorum",
-      "image": "https://img.freepik.com/free-photo/laptop-with-colorful-screen-white-background-3d-rendering_1142-58703.jpg?t=st=1727167100~exp=1727170700~hmac=ad79bd70975a680da059e985955c8a6c046f5fd1f8cfb385d92e491f30d93f89&w=740"
+      "image": "/assets/laptop2.jpg"
     },
     {
       "id": "6",
@@ -89,21 +90,21 @@
       "rating": "4",
       "query": "phone",
       "discribtion": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima magnam error nam obcaecati voluptatibus explicabo,fugiat cumque eaque perspiciatis tempore debitis odio? Amet, fuga dolorum",
-      "image": "https://img.freepik.com/free-psd/book-club-template-design_23-2151489427.jpg?t=st=1727078949~exp=1727082549~hmac=611be97bb49bb4998075c6c9395e665c94e958954e15d2a8bb36c4476d7f291a&w=740"
+      "image": "/assets/book11.jpg"
     },
     {
       "id": "7",
       "qty": 1,
       "isnew": "true",
-      "title": "airpods",
+      "title": "laptop",
       "rowprice": 330,
       "price": 300,
       "brand": "local",
       "rating": "6",
-      "query": "phone",
+      "query": "laptop",
       "discribtion": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima magnam error nam obcaecati voluptatibus explicabo,fugiat cumque eaque perspiciatis tempore debitis odio? Amet, fuga dolorum",
       "onSale": "true",
-      "image": "https://img.freepik.com/premium-photo/black-gray-ipod-with-headphones-it_860932-15652.jpg?w=740"
+      "image": "/assets/laptop3.jpg"
     },
     {
       "id": "8",
@@ -116,7 +117,7 @@
       "query": "hedphone",
       "discribtion": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima magnam error nam obcaecati voluptatibus explicabo,fugiat cumque eaque perspiciatis tempore debitis odio? Amet, fuga dolorum",
       "onSale": "true",
-      "image": "https://img.freepik.com/premium-photo/black-silver-watch-with-black-face-black-band_869640-783530.jpg?w=740"
+      "image": "/assets/watch1.jpg"
     },
     {
       "id": "9",
@@ -129,12 +130,12 @@
       "query": "phone",
       "discribtion": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima magnam error nam obcaecati voluptatibus explicabo,fugiat cumque eaque perspiciatis tempore debitis odio? Amet, fuga dolorum",
       "onSale": "true",
-      "image": "https://img.freepik.com/free-vector/smartphone-with-different-views-realistic-style_23-2147849864.jpg?t=st=1727172358~exp=1727175958~hmac=d16e17f5318d747be1e04e2782e6d442c3f3b1a07a496f2ad063e90a7dba055f&w=740"
+      "image": "/assets/mobile6.jpg"
     },
     {
       "id": "10",
       "qty": 1,
-      "title": "laptop",
+      "title": "watch",
       "onSale": "true",
       "rowprice": 330,
       "price": 300,
@@ -142,168 +143,62 @@
       "query": "phone",
       "rating": "4",
       "discribtion": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima magnam error nam obcaecati voluptatibus explicabo,fugiat cumque eaque perspiciatis tempore debitis odio? Amet, fuga dolorum",
-      "image": "https://img.freepik.com/premium-photo/photo-modern-laptop-dark-surface_1325814-816.jpg?w=740"
+      "image": "/assets/watch2.jpg"
     }
   ],
   "bestsellers": [
     {
-      "id": "2",
-      "isnew": "true",
-      "title": "Logitech fil M720",
-      "rowprice": "330",
-      "price": "300",
-      "brand": "local",
-      "rating": "6",
-      "postId": "2",
-      "image": "https://img.freepik.com/free-photo/laptop-with-colorful-screen-white-background-3d-rendering_1142-58703.jpg?t=st=1727167100~exp=1727170700~hmac=ad79bd70975a680da059e985955c8a6c046f5fd1f8cfb385d92e491f30d93f89&w=740"
-    },
-    {
-      "id": "3",
-      "title": "watch",
-      "rowprice": "330",
-      "price": "300",
-      "brand": "local",
-      "rating": "5",
-      "postId": "3",
-      "image": "https://img.freepik.com/premium-photo/black-silver-watch-with-black-face-black-band_869640-783530.jpg?w=740"
-    },
-    {
-      "id": "4",
-      "title": "airpods",
-      "rowprice": "330",
-      "price": "300",
-      "brand": "local",
-      "rating": "3",
-      "postId": "4",
-      "image": "https://img.freepik.com/free-vector/headphones-wireless-realistic-composition-with-isolated-image-phones-with-power-bank-dock-station-with-reflections-vector-illustration_1284-73201.jpg?t=st=1727077067~exp=1727080667~hmac=a84665f4a9e7d981eff31d8bbcc3d6035565443644f3d12699740f6ed79a8fd6&w=740"
-    },
-    {
-      "id": "5",
-      "title": "iPhone",
-      "rowprice": "330",
-      "price": "300",
+      "id": "6",
+      "qty": 1,
+      "title": "book",
+      "rowprice": 330,
+      "price": 300,
       "brand": "local",
       "rating": "4",
-      "postId": "5",
-      "image": "https://img.freepik.com/free-vector/realistic-smartphone-different-views_23-2148350922.jpg?t=st=1727166847~exp=1727170447~hmac=f97ef3ee0deb0620d7a42b83824e9baf5da619cfaa34da6a549283ddd01e2aa2&w=740"
-    }
-  ],
-  "users": [
-    {
-      "id": "3130",
-      "data": {
-        "email": "arniakoushki@gmail.com",
-        "password": "fateme369"
-      }
+      "query": "phone",
+      "discribtion": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima magnam error nam obcaecati voluptatibus explicabo,fugiat cumque eaque perspiciatis tempore debitis odio? Amet, fuga dolorum",
+      "image": "/assets/book11.jpg"
     },
     {
-      "id": "a614",
-      "data": {
-        "email": "arniakoushki@gmail.com",
-        "password": "fateme369"
-      }
+      "id": "7",
+      "qty": 1,
+      "isnew": "true",
+      "title": "laptop",
+      "rowprice": 330,
+      "price": 300,
+      "brand": "local",
+      "rating": "6",
+      "query": "laptop",
+      "discribtion": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima magnam error nam obcaecati voluptatibus explicabo,fugiat cumque eaque perspiciatis tempore debitis odio? Amet, fuga dolorum",
+      "onSale": "true",
+      "image": "/assets/laptop3.jpg"
     },
     {
-      "id": "86ae",
-      "data": {
-        "email": "arniakoushki@gmail.com",
-        "password": "fateme369"
-      }
+      "id": "8",
+      "qty": 1,
+      "title": "watch",
+      "rowprice":330,
+      "price": 300,
+      "brand": "local",
+      "rating": "5",
+      "query": "hedphone",
+      "discribtion": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima magnam error nam obcaecati voluptatibus explicabo,fugiat cumque eaque perspiciatis tempore debitis odio? Amet, fuga dolorum",
+      "onSale": "true",
+      "image": "/assets/watch1.jpg"
     },
     {
-      "id": "5090",
-      "data": {
-        "email": "arniakoushki@gmail.com",
-        "password": "fateme369"
-      }
-    },
-    {
-      "id": "7a91",
-      "data": {
-        "email": "arniakoushki@gmail.com",
-        "password": "fateme369"
-      }
-    },
-    {
-      "id": "61fd",
-      "data": {
-        "email": "arniakoushki@gmail.com",
-        "password": "fateme369"
-      }
-    },
-    {
-      "id": "d7f5",
-      "data": {
-        "email": "arniakoushki@gmail.com",
-        "password": "fateme369"
-      }
-    },
-    {
-      "id": "da9c",
-      "data": {
-        "email": "arniakoushki@gmail.com",
-        "password": "fateme369"
-      }
-    },
-    {
-      "id": "46a3",
-      "data": {
-        "email": "arniakoushki@gmail.com",
-        "password": "fateme369"
-      }
-    },
-    {
-      "id": "a36d",
-      "data": {
-        "email": "arniakoushki@gmail.com",
-        "password": "fateme369"
-      }
-    },
-    {
-      "id": "0255",
-      "data": {
-        "email": "arniakoushki@gmail.com",
-        "password": "fateme369"
-      }
-    },
-    {
-      "id": "3411",
-      "data": {
-        "email": "arniakoushki@gmail.com",
-        "password": "fateme369"
-      }
-    },
-    {
-      "id": "bd07",
-      "data": {
-        "name": "arnia",
-        "email": "arniakoushki@gmail.com",
-        "password": "fateme369"
-      }
-    },
-    {
-      "id": "bd06",
-      "data": {
-        "name": "arnia",
-        "email": "arniakoushki@gmail.com",
-        "password": "fateme369"
-      }
-    },
-    {
-      "id": "4870",
-      "data": {
-        "name": "arnia",
-        "email": "arniakoushki@gmail.com",
-        "password": "fateme369"
-      }
-    },
-    {
-      "id": "a236",
-      "data": {
-        "name": "arnia",
-        "email": "arniakoushki@gmail.com",
-        "password": "fateme369"
-      }
+      "id": "9",
+      "qty": 1,
+      "title": "iPhone",
+      "rowprice": 330,
+      "price": 300,
+      "brand": "local",
+      "rating": "3",
+      "query": "phone",
+      "discribtion": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima magnam error nam obcaecati voluptatibus explicabo,fugiat cumque eaque perspiciatis tempore debitis odio? Amet, fuga dolorum",
+      "onSale": "true",
+      "image": "/assets/mobile6.jpg"
     }
   ]
+ 
 }

@@ -1,24 +1,23 @@
 "use client";
 import Onsale from "@/components/Onsale";
-import axios from "axios";
 import Image from "next/image";
 import { useParams } from "next/navigation";
 import React from "react";
 import { useQuery } from "react-query";
 import ProductInfo from "@/components/ProductInfo";
 import Container from "@/components/Container";
+import axiosClient from "@/components/GlobalApi";
 
 function SingeProduct() {
   const { productId } = useParams();
   // for onsale
   const { data: product } = useQuery("productsId", () =>
-    axios
-      .get(`http://localhost:3000/products/${productId}`)
+   axiosClient.get(`/products/${productId}`)
       .then((res) => res.data)
   );
   //for product info
-  const { data } = useQuery("productOnsale", () =>
-    axios.get(`http://localhost:3000/products`).then((res) => res.data)
+  const { data } = useQuery("allProducts", () =>
+    axiosClient.get(`/products`).then((res) => res.data)
   );
   return (
     <Container className="my-10">

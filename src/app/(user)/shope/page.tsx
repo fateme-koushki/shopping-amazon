@@ -1,9 +1,11 @@
 "use client";
+/* eslint-disable */ 
+
 import Container from "@/components/Container";
+import axiosClient from "@/components/GlobalApi";
 import ListProduct from "@/components/ListProduct";
 import Product from "@/components/Product";
 import { ProductProps } from "@/types";
-import axios from "axios";
 import React, { useState } from "react";
 import { BsGridFill } from "react-icons/bs";
 import { ImList } from "react-icons/im";
@@ -13,10 +15,13 @@ function Shope() {
   const [showGrid, setShowGrid] = useState(true);
   const [showList, setShowList] = useState(false);
 
-  const { data } = useQuery("productsShop", () =>
-    axios.get("http://localhost:3000/products").then((res) => res.data)
-  );
-  console.log(data);
+  const { data } = useQuery<ProductProps[]>("allProducts", () => {
+    return axiosClient.get("/products" ).then((res) => res.data )
+},{
+  refetchOnWindowFocus: true,   
+  refetchInterval: 10000,     
+}
+ );
   return (
     <Container>
       <div className="flex items-center justify-between pb-10">

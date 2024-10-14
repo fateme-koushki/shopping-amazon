@@ -24,6 +24,7 @@ export const cartSlice = createSlice({
         increaseQty: (state, action) => {
             const existingProduct = state?.productData.find(
                 (item : ProductProps) => item?.id === action?.payload?.id
+
             );
             if(existingProduct){
                 existingProduct.qty ++

@@ -15,10 +15,7 @@ function Navbar() {
   const [userInfo, setUserInfo] = useState<any>([]);
   const [menuNav, setMenuNav] = useState(false);
     // for logout
-  const logout = () => {
-    Cookies.remove("tokenLogin");
-    location.reload();
-  };
+
   // get cookie
   useEffect(() => {
     const userInf = Cookies.get("tokenLogin");
@@ -27,6 +24,11 @@ function Navbar() {
       setUserInfo(user);
     }
   }, []);
+  //logout data
+  const logout = () => {
+    Cookies.remove("tokenLogin");
+    location.reload();
+  };
   const navbarList = [
     {
       title: "Home",
@@ -41,7 +43,6 @@ function Navbar() {
       link: "/cart",
     },
   ];
-  console.log(userInfo)
   return (
     <div className="w-full  transition ease-in duration-300 delay-150 h-20 border-b-[1px] bg-white border-gray-400 sticky top-0 z-50 ">
       <nav className="h-full max-w-screen-xl mx-auto px-4 xl:px-0 flex items-center justify-between gap-2">
@@ -71,7 +72,7 @@ function Navbar() {
           ))}
           {userInfo && userInfo?.name && (
             <button
-              onClick={()=>logout}
+              onClick={()=>logout()}
               className=" hover:font-medium md:w-20 md:h-6 h-10 justify-center items-center px-3  max-w-12
                text-gray-500 hover:underline underline-offset-4 decoration-[1px] hover:text-red-600
                 md:border-r-[2px] border-r-gray-300 duration-200 last:border-r-0"

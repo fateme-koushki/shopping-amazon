@@ -1,15 +1,15 @@
 "use client";
 import { ProductProps } from "@/types";
-import axios from "axios";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { useQuery } from "react-query";
 import Slider from "react-slick";
+import axiosClient from "./GlobalApi";
 
 function Banner() {
   const { data} = useQuery("Banner", () =>
-    axios.get("http://localhost:3000/banner").then((res) => res.data)
+    axiosClient.get("/banner").then((res) => res.data)
   );
   const settings = {
     dots: true,
