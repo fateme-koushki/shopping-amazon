@@ -4,6 +4,8 @@ import Price from "./Price";
 import { useDispatch } from "react-redux";
 import { addToCart } from "@/app/redux/cartSlice";
 import { ProductProps } from "@/types";
+import  { Toaster } from "react-hot-toast";
+
 interface Props {
   productInfo: ProductProps;
 }
@@ -44,6 +46,15 @@ function ProductInfo( {productInfo} : Props) {
         <span className="text-base font-medium">Categories:</span> Spring
         collection, Streetwear, Women Tags: featured SKU: N/A
       </p>
+      <Toaster
+        position="bottom-right"
+        toastOptions={{
+          style: {
+            background: "#000",
+            color: "#fff",
+          },
+        }}
+      />
     </div>
   );
 }

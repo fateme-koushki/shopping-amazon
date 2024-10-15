@@ -5,11 +5,17 @@ import { BsArrowsFullscreen } from 'react-icons/bs';
 import { MdOutlineStarPurple500 } from 'react-icons/md';
 import { AiOutlineShopping } from 'react-icons/ai';
 import { ProductProps } from '@/types';
+import { useDispatch } from 'react-redux';
+import  { Toaster } from "react-hot-toast";
+import { addToCart } from '@/app/redux/cartSlice';
+
 interface Props {
     product: ProductProps;
     bg?: string;
   }
 function ListProduct({ product, bg }: Props) {
+  const dispatch = useDispatch();
+
     return (
         <div className="w-full relative group flex items-center border-[1px] hover:shadow-lg duration-200 shadow-gray-500 rounded-md overflow-hidden group">
             <div className="max-w-80 max-h-80 flex">
@@ -60,7 +66,10 @@ function ListProduct({ product, bg }: Props) {
                     </div>
                 </div>
                 <div className="flex items-center gap-5 duration-300">
-                    <button className="bg-gray-800 text-gray-200 px-4 py-2 text-xs rounded-full flex items-center gap-1 hover:bg-gray-950 hover:text-white duration-200">
+                    <button   onClick={() => {
+                dispatch(addToCart(product));
+               
+              }}  className="bg-gray-800 text-gray-200 px-4 py-2 text-xs rounded-full flex items-center gap-1 hover:bg-gray-950 hover:text-white duration-200">
                         <span className="text-sm mb-1">
                             <AiOutlineShopping />
                         </span>{" "}
@@ -79,6 +88,15 @@ function ListProduct({ product, bg }: Props) {
                     </Link>
                 </div>
             </div>
+            <Toaster
+        position="bottom-right"
+        toastOptions={{
+          style: {
+            background: "#000",
+            color: "#fff",
+          },
+        }}
+      />
         </div>
     )
 }
