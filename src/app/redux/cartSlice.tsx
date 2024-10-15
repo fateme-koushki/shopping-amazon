@@ -1,5 +1,7 @@
 import { ProductProps } from "@/types";
 import { createSlice } from "@reduxjs/toolkit";
+import toast from "react-hot-toast";
+
 interface StoreState {
     productData: ProductProps[];
   }
@@ -17,8 +19,11 @@ export const cartSlice = createSlice({
             );
             if (existingProduct) {
                 existingProduct.qty += action.payload.qty;
+                toast.success(`The amount of this product increased}`)
             } else {
                 state.productData.push(action.payload);
+                toast.success(`{${action.payload.title}... added to cart}`);
+
             }
         },
         increaseQty: (state, action) => {

@@ -5,7 +5,7 @@ import React from "react";
 import { BsArrowsFullscreen } from "react-icons/bs";
 import { MdOutlineStarPurple500 } from "react-icons/md";
 import { AiOutlineShopping } from "react-icons/ai";
-import toast, { Toaster } from "react-hot-toast";
+import  { Toaster } from "react-hot-toast";
 import { useDispatch } from "react-redux";
 import { addToCart } from "@/app/redux/cartSlice";
 import { ProductProps } from "@/types";
@@ -38,7 +38,6 @@ function Product({ product, bg }: Props) {
             <button
               onClick={() => {
                 dispatch(addToCart(product));
-                toast.success(`{${product?.title}... added to cart}`);
               }}
               className="bg-gray-800  text-gray-200 px-4 py-2 text-xs flex items-center 
                 gap-1 hover:bg-gray-950 hover:text-white duration-200 rounded-full "

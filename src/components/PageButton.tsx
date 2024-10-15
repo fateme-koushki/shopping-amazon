@@ -29,7 +29,7 @@ function PageButton() {
 
   const { productData } = useSelector((state: StateProps) => state.cart);
   return (
-    <div className="fixed top-60 right-2 z-20 flex flex-col gap-2 ">
+    <div className="fixed  top-60 right-2 z-20 flex flex-col gap-2 ">
       <button
         onClick={() => {
           !userInfo?.name  ? logIn() : toast.error("your are signed in");
